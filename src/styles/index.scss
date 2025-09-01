@@ -7,6 +7,9 @@ $secondary-color: #616070;
 $fourth-color: #fff;
 $hover-color: #34568b;
 $font-family: 'Roboto', sans-serif;
+$card-width: 200px;
+$catalog-padding-v: 50px;
+$catalog-padding-h: 40px;
 
 // =======================
 // Mixins
@@ -108,10 +111,10 @@ $font-family: 'Roboto', sans-serif;
 // Conteúdo principal
 // =======================
 .main-container__cards {
-  padding: 50px 40px;
+  padding: $catalog-padding-v $catalog-padding-h;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 46px 48px;
+  gap: 48px 46px;
 
   @media (max-width: 487px) {
     grid-template-columns: 1fr;
@@ -137,7 +140,7 @@ $font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: $card-width;
   height: 408px;
   box-sizing: border-box;
   font-family: $font-family;
